@@ -333,6 +333,20 @@ a {
 		margin-right:10px;
 		float:right;
 		}
+	
+	footer {
+		clear:both;
+		height:auto;
+		}
+
+	
+	footer li {
+		float:none;
+		list-style-type:none;
+		text-align:left;
+		line-height:1.5;
+		margin-left:20px;
+		}
 }
 
 /* Tablet Screen set to 800px or below */
