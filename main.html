@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Template Main</title>
+
+<!--begin meta-->
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+
+<!--styles-->
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600|Bitter:400,400italic,700" rel="stylesheet" type="text/css"/>  <!--google font-->
+<link rel="stylesheet" href="css/unslider.css"/>  <!--unslider css-->
+<link rel="stylesheet" href="css/unslider-dots.css"/>  <!--unslider css-->
+<link href="css/flexnav.css" rel="stylesheet" type="text/css"/>  <!--flexnav css-->
+
+<!--scripts-->
+
+</head>
+
+<body>
+<header>
+
+<a href="home.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+
+<div id="portal">
+<a href="">Patient Portal: Login</a>
+</div>  <!--end portal-->
+
+</header>
+
+<!--MOBILE NAV-->
+<div class="menu-button"><img class="logo-mobile" src="images/logo-mobile.png" alt="logo-thumb"><p class="menu">Menu</p></div>
+<ul class="flexnav" data-breakpoint="800">
+    <li><a href="">Patient Portal: Login</a></li>
+	<li><a href="">About Us</a></li>
+    <li><a href="main.html">Procedures &amp; Services</a></li>
+    <li><a href="">Educational Info</a></li>
+    <li><a href="">Patient Resources</a></li>
+    <li><a href="">Contact Us</a></li>
+</ul>
+
+<!--MAIN NAV-->
+<nav class="main">
+    <ul>
+        <li class="sm"><a href="">About Us</a></li>
+        <li class="lg"><a href="main.html">Procedures &amp; Services</a></li>
+        <li class="med"><a href="">Educational Info</a></li>
+        <li class="med"><a href="">Patient Resources</a></li>
+        <li class="sm"><a href="">Contact Us</a></li>
+    </ul>
+</nav>
+
+<div id="wrapper">
+<main class="inner procedures-services">
+
+<h1>Procedures &amp; Services</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. Ut sodales nisl in felis suscipit in sollicitudin metus varius. Pellentesque porttitor nibh quis nisi aliquam quis feugiat odio fermentum. Nulla a enim eu est congue pellentesque sit amet a lacus. </p>
+
+
+<h2>Skin Exams &amp; Biopsies</h2>
+<img src="images/exam-thumb.jpg" alt="skin exam">
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer lectus turpis, venenatis quis sodales vitae, adipiscing ac dolor. Pellentesque rhoncus, ligula vitae blandit volutpat, arcu enim vehicula risus, at facilisis turpis turpis eget odio. Duis faucibus sodales pretium. Etiam suscipit magna metus. Aliquam vitae imperdiet est.</p>
+
+
+<h2>Photodynamic Therapy (Blue Light)</h2>
+<img src="images/pdt-thumb.jpg" alt="PDT">
+<p>In a metus neque. Donec sed est metus, in cursus lectus. Aliquam vel aliquam ante. Curabitur non libero ut ipsum eleifend cursus. Sed rutrum sagittis pulvinar. Suspendisse potenti. Maecenas ut sapien nisi. Ut accumsan varius ornare. Quisque euismod sapien ut erat fermentum sed viverra nibh congue. Sed at metus est.</p>
+
+
+<h2>Surgical Procedures</h2>
+<img src="images/surgery-thumb.jpg" alt="surgery">
+<p>Donec feugiat iaculis nibh sit amet varius. Sed laoreet justo vitae magna dignissim gravida. Nunc nec odio ligula, eget ultrices quam. Nulla commodo viverra magna a gravida. Ut rhoncus massa at nisi sollicitudin quis tincidunt dolor aliquam. Mauris vitae sagittis nunc. Integer sodales, magna sit amet laoreet laoreet, elit leo sollicitudin augue, nec pretium lacus purus et quam.</p>
+
+</main>
+
+<aside>
+<h3><a href="">About Skin Surgery Center</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. </p>
+<div class="learn-more"><h4><a href="">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+<h3><a href="">Office Locations</a></h3>
+<img src="images/map-thumb.png" alt="map">
+
+<h3><a href="">Patient Forms</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. </p>
+<div class="learn-more"><h4><a href="">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+<h3><a href="">Skin Cancer Education</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus eget tortor bibendum aliquam eget in mi. Phasellus ultrices rutrum nisl in vestibulum. </p>
+<div class="learn-more"><h4><a href="">Learn More<img src="images/arrow-r-black.png" alt="arrow"></a></h4></div>
+
+</aside>
+
+</div>  <!--end wrapper-->
+
+<footer>
+<ul>
+<li>Sitemap</li>
+<li>&copy;2016 Anna K. Sabo</li>
+<li>Skin Surgery Center, PS</li>
+</ul>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/unslider.js"></script>  <!--unslider-->
+<script type="text/javascript" src="js/jquery.flexnav.js"></script>  <!--flexnav-->
+<script>
+	$(document).ready(function($) {
+		$('.my-slider').unslider(); //initiate unslider
+		$(".flexnav").flexNav(); //initiate flexnav
+		$(".flexnav").flexNav({ 'animationSpeed' : 'fast' }); //flexnav speed
+	});
+</script>
+</body>
+</html>
